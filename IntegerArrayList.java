@@ -1,2 +1,2 @@
-public class IntegerArrayList extends IntegerList{
+public class IntegerArrayList implements IntegerList{
 }
