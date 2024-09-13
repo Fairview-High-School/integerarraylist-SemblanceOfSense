@@ -10,16 +10,14 @@ public class Test {
 
         l.add(1, 10);
         System.out.println(l);
-        do {
-            try {
-                l.add(-1, 55);
-            } catch (Error E) {
-                System.out.println(E);
-            }
-        } while (false);
+        try {
+            l.add(-1, 55);
+        } catch (Exception E) {
+            System.out.println(E);
+        }
         try {
             l.add(15, 55);
-        } catch (Error E) {
+        } catch (Exception E) {
             System.out.println(E);
         }
 
@@ -27,12 +25,12 @@ public class Test {
         System.out.println(l);
         try {
             l.set(-1, 55);
-        } catch (Error E) {
+        } catch (Exception E) {
             System.out.println(E);
         }
         try {
             l.set(15, 55);
-        } catch (Error E) {
+        } catch (Exception E) {
             System.out.println(E);
         }
 
@@ -47,12 +45,12 @@ public class Test {
         System.out.println(l);
         try {
             l.remove(-1);
-        } catch (Error E) {
+        } catch (Exception E) {
             System.out.println(E);
         }
         try {
             l.remove(15);
-        } catch (Error E) {
+        } catch (Exception E) {
             System.out.println(E);
         }
 
@@ -60,12 +58,12 @@ public class Test {
         System.out.println(l);
         try {
             l.get(-1);
-        } catch (Error E) {
+        } catch (Exception E) {
             System.out.println(E);
         }
         try {
             l.get(15);
-        } catch (Error E) {
+        } catch (Exception E) {
             System.out.println(E);
         }
 

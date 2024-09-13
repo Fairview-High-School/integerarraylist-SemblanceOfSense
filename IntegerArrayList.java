@@ -4,11 +4,10 @@ public class IntegerArrayList implements IntegerList{
 
     public IntegerArrayList() {
         this.size = 0;
-        this.internalList = new Integer[size];
+        this.internalList = new Integer[10];
     }
 
     public void add(Integer val) {
-        this.size++;
         if (size >= internalList.length) {
             Integer[] biggerArray = new Integer[internalList.length * 2];
             for (Integer i = 0; i < internalList.length; i++) {
@@ -17,7 +16,8 @@ public class IntegerArrayList implements IntegerList{
             this.internalList = biggerArray;
         }
 
-        this.internalList[size - 1] = val;
+        this.size++;
+        this.internalList[size-1] = val;
     }
 
     public void add(int index, Integer val) {
