@@ -24,6 +24,7 @@ public class IntegerArrayList implements IntegerList{
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();
         }
+        this.size++;
 
         if (size >= internalList.length) {
             Integer[] biggerArray = new Integer[internalList.length * 2];
@@ -33,8 +34,8 @@ public class IntegerArrayList implements IntegerList{
             this.internalList = biggerArray;
         }
 
-        for (int i = this.size; i > index; i--) {
-            this.internalList[i] = i - 1;
+        for (int i = this.size - 1; i > index; i--) {
+            this.internalList[i] = internalList[i - 1];
         }
 
         this.internalList[index] = val;
@@ -57,6 +58,8 @@ public class IntegerArrayList implements IntegerList{
         for (int i = index; i < this.size; i++) {
             this.internalList[i] = this.internalList[i+1];
         }
+
+        this.size--;
 
         return 0; // Why??
     }

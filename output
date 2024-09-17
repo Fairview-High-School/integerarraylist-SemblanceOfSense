@@ -1,0 +1,25 @@
+[]
+[5]
+[5,10,1]
+java.lang.IndexOutOfBoundsException
+java.lang.IndexOutOfBoundsException
+[5,10,1]
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
+java.lang.ArrayIndexOutOfBoundsException: Index 15 out of bounds for length 10
+[]
+[5,25,null]
+java.lang.IndexOutOfBoundsException
+java.lang.IndexOutOfBoundsException
+[5,25,null]
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 4
+java.lang.ArrayIndexOutOfBoundsException: Index 15 out of bounds for length 4
+3
+0
+false
+true
+true
+false
+2
+-1
+true
+false
