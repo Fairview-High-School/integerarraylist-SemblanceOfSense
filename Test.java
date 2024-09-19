@@ -10,9 +10,10 @@ public class Test {
         l.add(15);
         l.add(25);
 
-        System.out.println("Add value to index. Expected output : [5, 10, 15, 25]");
-        l.add(1, 10);
+        System.out.println("Add value to start. Expected output : [10, 5, 15, 25]");
+        l.add(0, 10);
         System.out.println(l);
+        l.remove(0);
         System.out.println("Add value below size. Expect Index out of bounds");
         try {
             l.add(-1, 55);
@@ -25,6 +26,7 @@ public class Test {
         } catch (Exception E) {
             System.out.println(E);
         }
+        l.add(1, 10);
 
         System.out.println("Set value. Expected output: [5, 10, 15, 20]");
         l.set(3, 20);
